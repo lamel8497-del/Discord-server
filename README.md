@@ -37,8 +37,4 @@ Discord
         await interaction.response.send_message(
             "\n".join(lines) or "No slash commands available.",
             ephemeral=True,
-        )
-
-
-async def setup(bot: commands.Bot):
-    await bot.add_cog(HelpCog(bot))
+        
