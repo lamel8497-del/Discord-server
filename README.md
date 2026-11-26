@@ -1,13 +1,5 @@
 # Discord-server
 Discord 
-import discord
-from discord import app_commands
-from discord.ext import commands
-
-
-class HelpCog(commands.Cog):
-    def __init__(self, bot: commands.Bot):
-        self.bot = bot
 
     @app_commands.command(name="help", description="List available slash commands")
     @app_commands.describe(command="Optional command name")
